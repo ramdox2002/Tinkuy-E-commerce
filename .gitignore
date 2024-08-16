@@ -1,0 +1,28 @@
+# Ignorar entornos virtuales
+venv/
+env/
+
+# Ignorar archivos de caché de Python
+__pycache__/
+*.py[cod]
+
+# Ignorar archivos de base de datos SQLite
+*.sqlite3
+*.db
+
+# Ignorar archivos de migración de Django
+*/migrations/
+*/migrations/*.pyc
+
+
+
+# Ignorar configuraciones locales de IDEs y editores
+.vscode/
+.idea/
+
+# Ignorar configuraciones y archivos de logs
+*.log
+*.env
+
+# Ignorar otros archivos innecesarios
+.DS_Store
