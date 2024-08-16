@@ -14,22 +14,22 @@ virtualenv venv
 
 
 ```bash
-    venv\scripts\activate
+venv\scripts\activate
 ```
 
 ### 3. INSTALA REQUIREMENTS.TXT
 
 
 ```bash
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 4. MIGRA LA BASE DE DATOS
 
 
 ```bash
-    py manage.py makemigrations
-    py manage.py migrate
+py manage.py makemigrations
+py manage.py migrate
 ```
 
 
@@ -37,14 +37,17 @@ virtualenv venv
 
 
 ```bash
-   py manage.py createsuperuser --username admin --email admin@example.com
+py manage.py createsuperuser --username admin --email admin@example.com
 ```
 
 ### 6.  INSERTA DATOS DE EJEMPLO
 
+```bash
+py manage.py shell
+```
 
 ```bash
-    from shop.models import Category, Product, Order
+from shop.models import Category, Product, Order
 from django.contrib.auth.models import User
 
 # Crear categorías
@@ -97,9 +100,9 @@ Order.objects.get_or_create(
 
 
 ```bash
-    py manage.py runserver
+py manage.py runserver
 ```
 
-📧 Credenciales de Administrador
-USERNAME: admin
-PASSWORD: admin
+### 📧 Credenciales de Administrador
+* USERNAME: admin
+* PASSWORD: admin
